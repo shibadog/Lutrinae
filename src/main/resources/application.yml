@@ -1,0 +1,6 @@
+
+app:
+  mizuho:
+    daily: https://www.mizuhobank.co.jp/rate/market/csv/tm_quote.csv
+    oldDaily: https://www.mizuhobank.co.jp/rate/market/csv/quote.csv
+    oldBorder: 2018-03-01
