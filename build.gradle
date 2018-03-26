@@ -24,9 +24,15 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-cache')
+
     compile('com.github.ulisesbocchio:jasypt-spring-boot:1.17')
-    
-    compileOnly 'org.projectlombok:lombok'
+    // Optional値をいい感じに出す。
+    // @see http://www.baeldung.com/jackson-optional
+    // @see https://spring.io/blog/2014/12/02/latest-jackson-integration-improvements-in-spring
+    compile('com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.8.6')
+
+    compileOnly('org.projectlombok:lombok')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

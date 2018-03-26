@@ -1,11 +1,14 @@
 package com.shibadog.lutrinae.domain.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import java.util.Map;
+import java.util.Optional;
 
-@Data
-@AllArgsConstructor
+import lombok.Builder;
+import lombok.Value;
+
+@Value(staticConstructor="of")
+@Builder
 public class Rate {
-    private String provider;
-    private String date;
+    String date;
+    Map<String, Optional<Double>> rate;
 }

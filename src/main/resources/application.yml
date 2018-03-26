@@ -1,6 +1,13 @@
+logging.level:
+  root: WARN
+  org.springframework.web: WARN
+  org.hibernate: ERROR
 
 app:
   mizuho:
     daily: https://www.mizuhobank.co.jp/rate/market/csv/tm_quote.csv
-    oldDaily: https://www.mizuhobank.co.jp/rate/market/csv/quote.csv
-    oldBorder: 2018-03-01
+    allDaily: https://www.mizuhobank.co.jp/rate/market/csv/quote.csv
+    border: 2018-03-01
+
+spring:
+  jackson.serialization.indent_output: true
